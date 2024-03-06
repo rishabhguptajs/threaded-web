@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg"
+import "./App.css"
+import Header from "./components/Header"
+import AnimatedCircle from "./components/AnimatedCircle"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main
+        className={`flex h-[100vh] w-[100vw] overflow-x-hidden bg-[#0a0a12] flex-col items-center justify-between p-4`}
+      >
+        <Header />
+        <AnimatedCircle />
+        <Footer />
+      </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

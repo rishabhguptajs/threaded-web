@@ -1,0 +1,15 @@
+.animated_circle_styling {
+    background: linear-gradient(135deg, slateblue, HotPink);
+    height: 50vmin;
+    width: 50vmin;
+    content: "";
+    display: inline-block;
+    filter: drop-shadow(0 0 3vmin rgb(207, 178, 207))
+      drop-shadow(0 5vmin 3vmin rgb(98, 0, 95))
+      drop-shadow(2vmin -4vmin 15vmin rgb(144, 124, 255))
+      drop-shadow(0 0 7vmin rgb(224, 99, 255)) blur(100px);
+    box-shadow: 0 -2vmin 3vmin LightPink inset, 0 1vmin 4vmin MediumPurple inset,
+      0 -2vmin 7vmin purple inset;
+    border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
+  }
+  
