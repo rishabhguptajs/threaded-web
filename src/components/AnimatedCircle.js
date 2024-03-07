@@ -1,10 +1,10 @@
-import React from 'react'
-import '../styles/animated_circle.css'
+import React from "react"
+import "../styles/animated_circle.css"
 
 const AnimatedCircle = () => {
   return (
     <div>
-      <div className='animated_circle_styling'></div>
+      <span className="animated_circle_styling"></span>
     </div>
   )
 }

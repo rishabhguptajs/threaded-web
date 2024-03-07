@@ -1,20 +1,14 @@
-import logo from "./logo.svg"
 import "./App.css"
-import Header from "./components/Header"
-import AnimatedCircle from "./components/AnimatedCircle"
-import Footer from "./components/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import HomePage from "./pages/HomePage"
 
 function App() {
   return (
-    <div className="App">
-      <main
-        className={`flex h-[100vh] w-[100vw] overflow-x-hidden bg-[#0a0a12] flex-col items-center justify-between p-4`}
-      >
-        <Header />
-        <AnimatedCircle />
-        <Footer />
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
