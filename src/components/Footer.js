@@ -6,12 +6,10 @@ const Footer = () => {
     alert("Thank you for subscribing to our newsletter!")
   }
   return (
-    <div>
+    <div className="flex flex-col">
       <div className="flex flex-col items-center justify-center align-middle">
-        <h1 className="text-white text-center text-[30px] z-10">
-          threads made
-        </h1>
-        <span className="easy_footer z-10 text-[3.4em] text-blue-400 font-bold">
+        <h1 className="text-white text-center text-[30px]">threads made</h1>
+        <span className="easy_footer text-[3.4em] text-blue-400 font-bold">
           easy.
         </span>
         <form className="flex m-8">
@@ -28,7 +26,7 @@ const Footer = () => {
           </button>
         </form>
       </div>
-      <main className="text-white flex w-[60vw] justify-between">
+      <div className="text-white flex w-[60vw] justify-between">
         <div className="flex justify-between w-[40%]">
           <div className="flex flex-col text-left p-2 m-2">
             <h1>Services</h1>
@@ -67,7 +65,7 @@ const Footer = () => {
             <button>GitHub</button>
           </span>
         </div>
-      </main>
+      </div>
     </div>
   )
 }
